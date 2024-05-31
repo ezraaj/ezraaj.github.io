@@ -1,0 +1,79 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center; /* Center text in the header */
+}
+
+nav ul {
+    background: #444;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block; /* Changed to inline-block for better spacing control */
+    margin: 0 15px; /* Increased margin for better spacing */
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline; /* Added hover effect for better UX */
+}
+
+section {
+    padding: 2rem;
+}
+
+.center {
+    text-align: center;
+}
+
+footer {
+    text-align: center; /* Center text in the footer */
+    padding: 1rem 0;
+    background: #333;
+    color: #fff;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+.education-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2rem; /* Space between the two columns */
+}
+
+.education-details, .education-description {
+    flex: 1;
+}
+
+/* Ensure responsive design */
+@media (max-width: 768px) {
+    .education-container {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0; /* Better spacing for mobile view */
+    }
+
+    footer {
+        position: static; /* Fix for mobile view to avoid overlapping content */
+    }
+}
